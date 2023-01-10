@@ -1,0 +1,9 @@
+[build-options]
+  observabilityIncluded = true
+
+[package]
+  distribution = "2201.2.3"
+  name = "myservice"
+  org = "yashodperera"
+  version = "1.2.1"
+
