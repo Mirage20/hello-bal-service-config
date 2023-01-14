@@ -10,7 +10,7 @@ type Greeting record {
 
 service / on new http:Listener(8090) {
     resource function get .(string name) returns Greeting {
-        Greeting greetingMessage = {"from" : "Choreo", "to" : name, "message" : "Welcome to WSO2 Choreo!"};
+        Greeting greetingMessage = {"from" : "Choreo", "to" : name, "message" : "Welcome to Choreo!"};
         return greetingMessage;
     }
 }
