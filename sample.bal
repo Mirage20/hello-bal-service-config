@@ -1,5 +1,7 @@
 import ballerina/http;
 
+configurable string message = ?;
+
 type Greeting record {
     string 'from;
     string to;
