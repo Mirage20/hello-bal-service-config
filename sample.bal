@@ -1,7 +1,7 @@
 import ballerina/http;
 
 configurable string message = ?;
-configurable string from = ?;
+configurable string 'from = ?;
 
 type Greeting record {
     string 'from;
@@ -11,7 +11,7 @@ type Greeting record {
 
 service / on new http:Listener(8090) {
     resource function get .(string name) returns Greeting {
-        Greeting greetingMessage = {"from" : from, "to" : name, "message" : message};
+        Greeting greetingMessage = {"from" : 'from, "to" : name, "message" : message};
         return greetingMessage;
     }
 }
